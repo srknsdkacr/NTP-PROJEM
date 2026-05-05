@@ -32,16 +32,18 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.kitapeklebtn = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -64,9 +66,9 @@
             // 
             this.groupBox1.BackgroundImage = global::NTP_PROJEM.Properties.Resources.kitaplar1;
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.groupBox1.Controls.Add(this.kitapeklebtn);
             this.groupBox1.Controls.Add(this.kitapsil);
-            this.groupBox1.Location = new System.Drawing.Point(136, 63);
+            this.groupBox1.Controls.Add(this.kitapeklebtn);
+            this.groupBox1.Location = new System.Drawing.Point(134, 34);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(150, 322);
             this.groupBox1.TabIndex = 2;
@@ -87,18 +89,31 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button3);
+            this.groupBox2.BackgroundImage = global::NTP_PROJEM.Properties.Resources.kitaplar1;
+            this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Location = new System.Drawing.Point(680, 63);
+            this.groupBox2.Controls.Add(this.button4);
+            this.groupBox2.Location = new System.Drawing.Point(690, 34);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(150, 322);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             // 
+            // button2
+            // 
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Location = new System.Drawing.Point(15, 180);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(119, 113);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "ÜYE İŞLEMLERİ";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(328, 34);
+            this.listBox1.Location = new System.Drawing.Point(330, 55);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(313, 95);
             this.listBox1.TabIndex = 4;
@@ -106,80 +121,92 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(328, 135);
+            this.textBox1.Location = new System.Drawing.Point(330, 159);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(131, 20);
+            this.textBox1.Size = new System.Drawing.Size(111, 20);
             this.textBox1.TabIndex = 5;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(328, 161);
+            this.button1.Location = new System.Drawing.Point(447, 157);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(95, 23);
             this.button1.TabIndex = 6;
-            this.button1.Text = "KİTAP ARA";
+            this.button1.Text = "Kitap Ara";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(39, 19);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 70);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "ÜYE EKLE";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(39, 169);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 70);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "ÜYE SİL";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(342, 393);
+            this.button4.Location = new System.Drawing.Point(12, 17);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(102, 55);
+            this.button4.Size = new System.Drawing.Size(122, 112);
             this.button4.TabIndex = 7;
-            this.button4.Text = "EMANET VER";
+            this.button4.Text = "EMANET İŞLEMLERİ";
             this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(504, 393);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(101, 55);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "EMANET İADE AL";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(328, 207);
+            this.listBox2.Location = new System.Drawing.Point(330, 216);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(313, 95);
             this.listBox2.TabIndex = 9;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(328, 308);
+            this.textBox2.Location = new System.Drawing.Point(330, 319);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(131, 20);
+            this.textBox2.Size = new System.Drawing.Size(111, 20);
             this.textBox2.TabIndex = 10;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(328, 335);
+            this.button6.Location = new System.Drawing.Point(447, 317);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(95, 23);
             this.button6.TabIndex = 11;
-            this.button6.Text = "EMANET ARA";
+            this.button6.Text = "Emanet Ara";
             this.button6.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(330, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Kitaplar";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(330, 198);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Emanetler";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(548, 317);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(95, 23);
+            this.button3.TabIndex = 14;
+            this.button3.Text = "Emanet Listele";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(548, 156);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(95, 23);
+            this.button5.TabIndex = 15;
+            this.button5.Text = "Kitap Listele";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form1
             // 
@@ -188,12 +215,14 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::NTP_PROJEM.Properties.Resources.proje_rkaplan4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(937, 481);
+            this.ClientSize = new System.Drawing.Size(1017, 376);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.listBox1);
@@ -202,7 +231,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "KÜTÜPHANEM";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -219,13 +248,15 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button5;
     }
 }
 

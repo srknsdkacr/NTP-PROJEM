@@ -9,8 +9,8 @@ namespace NTP_PROJEM
     public class kullanicilar
     {
         public string Kisi_ad { get; set; }
-        public string Kiisi_soyad { get; set; }
-        public int username { get; set; }
+        public string Kisi_soyad { get; set; }
+        public string username { get; set; }
         public string Password { get; set; }
     }
 }

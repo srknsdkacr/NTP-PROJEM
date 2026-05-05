@@ -46,11 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Giris.cs">
+    <Compile Include="emanet.cs" />
+    <Compile Include="emanetislemleri.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Giris.Designer.cs">
-      <DependentUpon>Giris.cs</DependentUpon>
+    <Compile Include="emanetislemleri.Designer.cs">
+      <DependentUpon>emanetislemleri.cs</DependentUpon>
     </Compile>
     <Compile Include="kitaplık.cs" />
     <Compile Include="Form1.cs">
@@ -65,17 +66,26 @@
     <Compile Include="kitapeklemesayfasi.Designer.cs">
       <DependentUpon>kitapeklemesayfasi.cs</DependentUpon>
     </Compile>
+    <Compile Include="kullaniciislemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullaniciislemleri.Designer.cs">
+      <DependentUpon>kullaniciislemleri.cs</DependentUpon>
+    </Compile>
     <Compile Include="kullanicilar.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="emanetislemleri.resx">
+      <DependentUpon>emanetislemleri.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Giris.resx">
-      <DependentUpon>Giris.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="kitapeklemesayfasi.resx">
       <DependentUpon>kitapeklemesayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullaniciislemleri.resx">
+      <DependentUpon>kullaniciislemleri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
